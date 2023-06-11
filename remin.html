@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | PayGo </title>
+
+
+    <link rel = "stylesheet" href = "remin.css">
+	<script src="remin.js"></script>
+	
+	
+</head>
+<body>
+
+    <!--Header-->
+     <div class="container0">
+        <div class="navigation">
+            <div class="nav1">   <!--Logo_Nav-->
+                <center>
+                <a href=""><img class="logo" src="cover.png" alt="PayGo"></a>
+                </center>
+            </div>
+
+            <div class="nav2">
+                <div class="navbar">
+                    <a class="current" href="Home Page.html">Home</a>
+                    <a href="Payment.html">Payment</a>
+                    <a href="About Us Page.html">About Us</a>
+
+                    <!--Dropdown-->
+                    <div class="dropdown">
+                        <button class="dropb">Online Services
+                            <i class="=d_down"></i>
+                        </button>
+                        <div class="dropdown_content">
+                            <a href="Register.php">Online Register</a>
+                            <a href="LogIn.php">Login</a>
+                        </div>
+                    </div>
+
+                    <a href="user account Page.php">User Account</a>
+                </div>
+
+            </div>
+
+            <!--SearchBox and language dropdown-->
+            <div class="nav3"> 
+                <div class="searchbox">
+                    <form class="searchf" action="action_page.php">
+                        <input type="text" placeholder="...." name="search">
+                        <button type="submit"><i class="searchb"></i><center>Search</center></button>
+                    </form>
+                </div>
+                <div class="searchbox1">
+                    <div class="dropdown1">
+                        <button class="dropb1">Languages</button>
+                        <div class="dropdown_content1">
+                            <a href="#">English</a>
+                            <a href="#">Sinhala</a>
+                            <a href="#">Tamil</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slideshow container -->
+        <div class="slideshow_container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <img src = "image1.jpg" style = "width:100% fade">
+            </div>
+  
+            <div class="mySlides fade">
+                <img src = "image2.jpg" style = "width:100%">
+            </div>
+  
+  
+            <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+  
+        <!-- The dots/circles -->
+       <div style="text-align:center">
+            <span class="circle" onclick="currentSlide(1)"></span>
+            <span class="circle" onclick="currentSlide(2)"></span>
+        
+        </div>
+	
+
+		<script>
+		
+		
+		
+		var hours=Date();
+
+		document.write(hours);
+		
+		
+		
+		
+		</script>
+	
+    
+        <!--close header-->
+		
+		
+		
+  <div class="container">
+        <h1>Event and Bill Reminder</h1>
+       <form action="rem.php" method="POST"> 
+            <label>Event Name:</label>
+            <input type="text" name="event">
+       
+       
+            <label>Event Date:</label>
+            <input type="text" name="date1">
+    
+       
+            <label>Bill Name:</label>
+            <input type="text" name="bilname">
+        
+    
+            <label>Bill Due Date:</label>
+            <input type="text" name="date2">
+			
+			
+			<label>Description:</label>
+            <input type="text" name="comment">
+        
+        <button onclick="setReminder()">Set Reminder +</button>
+		
+		</form>
+    </div>
+		
+		
+		<br><br><br><br><br><br><br>
+		
+		
+		
+
+    <!--Footer-->
+    <div class="container2">
+
+        <div class="savings4">
+            <div class="sav5">
+                <p class="p4">Contact Us</p>
+                <br>
+                <p class="p5"><a href="+9476-7865324">+9476-7865324</a></p>
+                <p class="p5"><a herf="">Fax:(+94)76-7865324</a></p>
+                <p class="p5"><a href="">Email:support@paygo.com</a></p>
+            </div>
+
+            <div class="sav6">
+                <p class="p6">No.25/B,New Kandy Road,</p>
+                <p class="p7">Gampaha, </p>
+                <p class="p7">Sri Lanka. </p>
+            </div>
+
+            <div class="sav7">
+                <p class="p4">Get Help</p>
+                <br>
+                <p class="p5"><a href="news page.html">News</a></p>
+                <p class="p5"><a href="event.html">Event<a></p>
+            </div>
+
+            <div class="sav8">
+                <p class="p4">Company</p>
+                <br>
+                <p class="p5"><a href="">Contact Us</a></p>
+                <p class="p5"><a href=""></a>Privacy Policy</p>
+                <p class="p5"><a href="">Terms & Conditions</a></p>
+            </div>
+
+            <div class="sav9">
+                <img class="payments" src="payment.png" alt="Payment Methods">
+                <div class="social">
+                <center>
+                    <a href=""><img class="social1" src="facebook.png" alt="Facebook"></a>
+                    <a href=""><img class="social1" src="insta.png" alt="Instagram"></a>
+                    <a href=""><img class="social1" src="twitter.png" alt="Twitter"></a>
+                    <a href=""><img class="social1" src="link.png" alt="Linkdin"></a>
+                </center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container3">
+        <center>
+            <p class="p10">Copyright © 2023,PayGo Group Limited and its subsidiaries.All rights reserved.</p>
+        </center>
+    </div>
+
+
+   
+    
+</body>
+</html>
